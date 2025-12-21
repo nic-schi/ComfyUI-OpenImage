@@ -1,7 +1,7 @@
 [project]
 name = "openimage"
 description = "Lets you open a generated Image in a Specific Program."
-version = "1.0.0"
+version = "1.0.1"
 license = {file = "LICENSE"} 
 # classifiers = [
 #     # For OS-independent nodes (works on all operating systems)
@@ -30,6 +30,6 @@ Documentation = "https://github.com/nic-schi/ComfyUI-OpenImage/wiki"
 [tool.comfy]
 PublisherId = "nic-schi"
 DisplayName = "ComfyUI-OpenImage"
-Icon = ""
+Icon = "https://raw.githubusercontent.com/nic-schi/ComfyUI-OpenImage/refs/heads/main/icon.png"
 includes = [] 
 # "requires-comfyui" = ">=1.0.0"  # ComfyUI version compatibility
