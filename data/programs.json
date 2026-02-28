@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "programs": [
+    {
+      "name": "Default",
+      "category": "system",
+      "is_default": true,
+      "launch": {
+        "method": "shell_open",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "<SYSTEM_DEFAULT>"
+      ]
+    },
+    {
+      "name": "Default-Program",
+      "category": "system",
+      "is_default": true,
+      "launch": {
+        "method": "shell_open",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "<SYSTEM_DEFAULT_PROGRAM>"
+      ]
+    },
+    {
+      "name": "Default-Browser",
+      "category": "browser",
+      "is_default": true,
+      "launch": {
+        "method": "shell_open",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "<SYSTEM_DEFAULT_BROWSER>"
+      ]
+    },
+    {
+      "name": "Firefox",
+      "category": "browser",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\Mozilla Firefox\\firefox.exe",
+        "%ProgramFiles(x86)%\\Mozilla Firefox\\firefox.exe"
+      ]
+    },
+    {
+      "name": "Firefox Developer Edition",
+      "category": "browser",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\Firefox Developer Edition\\firefox.exe",
+        "%ProgramFiles(x86)%\\Firefox Developer Edition\\firefox.exe",
+        "%LocalAppData%\\Firefox Developer Edition\\firefox.exe"
+      ]
+    },
+    {
+      "name": "Firefox Nightly",
+      "category": "browser",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\Firefox Nightly\\firefox.exe",
+        "%ProgramFiles(x86)%\\Firefox Nightly\\firefox.exe",
+        "%LocalAppData%\\Firefox Nightly\\firefox.exe"
+      ]
+    },
+    {
+      "name": "Brave Browser",
+      "category": "browser",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+        "%ProgramFiles(x86)%\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+        "%LocalAppData%\\BraveSoftware\\Brave-Browser\\Application\\brave.exe"
+      ]
+    },
+    {
+      "name": "Google Chrome",
+      "category": "browser",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\Google\\Chrome\\Application\\chrome.exe",
+        "%ProgramFiles(x86)%\\Google\\Chrome\\Application\\chrome.exe",
+        "%LocalAppData%\\Google\\Chrome\\Application\\chrome.exe"
+      ]
+    },
+    {
+      "name": "Microsoft Edge",
+      "category": "browser",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\Microsoft\\Edge\\Application\\msedge.exe",
+        "%ProgramFiles(x86)%\\Microsoft\\Edge\\Application\\msedge.exe",
+        "%LocalAppData%\\Microsoft\\Edge\\Application\\msedge.exe"
+      ]
+    },
+    {
+      "name": "Opera",
+      "category": "browser",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%LocalAppData%\\Programs\\Opera\\opera.exe",
+        "%ProgramFiles%\\Opera\\launcher.exe",
+        "%ProgramFiles(x86)%\\Opera\\launcher.exe"
+      ]
+    },
+    {
+      "name": "Opera GX",
+      "category": "browser",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%LocalAppData%\\Programs\\Opera GX\\opera.exe",
+        "%ProgramFiles%\\Opera GX\\launcher.exe",
+        "%ProgramFiles(x86)%\\Opera GX\\launcher.exe"
+      ]
+    },
+    {
+      "name": "Photoshop",
+      "category": "image_editor",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\Adobe\\Adobe Photoshop *\\Photoshop.exe",
+        "%ProgramFiles%\\Adobe\\Adobe Photoshop *\\PhotoshopLauncher.exe"
+      ]
+    },
+    {
+      "name": "GIMP",
+      "category": "image_editor",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\GIMP 2\\bin\\gimp-2.10.exe",
+        "%ProgramFiles(x86)%\\GIMP 2\\bin\\gimp-2.10.exe"
+      ]
+    },
+    {
+      "name": "Paint.NET",
+      "category": "image_editor",
+      "is_default": false,
+      "launch": {
+        "method": "exe",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "%ProgramFiles%\\paint.net\\PaintDotNet.exe",
+        "%ProgramFiles(x86)%\\paint.net\\PaintDotNet.exe"
+      ]
+    },
+    {
+      "name": "Microsoft Paint",
+      "category": "image_editor",
+      "is_default": false,
+      "launch": {
+        "method": "shell_open",
+        "args": [
+          "{file}"
+        ]
+      },
+      "possible_paths": [
+        "mspaint.exe"
+      ]
+    }
+  ]
+}

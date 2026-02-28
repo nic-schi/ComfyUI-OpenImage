@@ -1,0 +1,880 @@
+{
+  "id": "6bfcba8a-6375-40f0-852f-904e25476280",
+  "revision": 0,
+  "last_node_id": 26,
+  "last_link_id": 20,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "OpenImageNode",
+      "pos": [
+        659.1600341796867,
+        158.79999237060545
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 1
+        },
+        {
+          "name": "program_input",
+          "shape": 7,
+          "type": "PROGRAM",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "chosen_program",
+          "type": "PROGRAM",
+          "links": [
+            10
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OpenImageNode"
+      },
+      "widgets_values": [
+        "use Input",
+        "Default-Program",
+        "",
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    },
+    {
+      "id": 7,
+      "type": "OpenImageNode",
+      "pos": [
+        1133.1756340874601,
+        156.4679914601644
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 7
+        },
+        {
+          "name": "program_input",
+          "shape": 7,
+          "type": "PROGRAM",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "chosen_program",
+          "type": "PROGRAM",
+          "links": [
+            9
+          ]
+        }
+      ],
+      "title": "\"use Input\" example",
+      "properties": {
+        "Node name for S&R": "OpenImageNode"
+      },
+      "widgets_values": [
+        "use Input",
+        "Default-Program",
+        "",
+        ""
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 6,
+      "type": "Note",
+      "pos": [
+        661.501289876301,
+        -43.211937764485306
+      ],
+      "size": [
+        398.66678873697936,
+        132.66667175292963
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "use_source Meaning",
+      "properties": {},
+      "widgets_values": [
+        "This Node here uses the input from the Connected Program Chooser\n\nuse_source meaning:\n1. use Selected = Will use the Selected Item in the program slot\n2. use Input = Will (if given) use the connected program_input\n3. use Custom = Will use the custom path in the custom_executable\n\nExamples to the right"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 13,
+      "type": "OpenImageNode",
+      "pos": [
+        2056.8051274956624,
+        152.9598643239337
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 12
+        },
+        {
+          "name": "program_input",
+          "shape": 7,
+          "type": "PROGRAM",
+          "link": 11
+        }
+      ],
+      "outputs": [
+        {
+          "name": "chosen_program",
+          "type": "PROGRAM",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "title": "\"use Custom\" example",
+      "properties": {
+        "Node name for S&R": "OpenImageNode"
+      },
+      "widgets_values": [
+        "use Custom",
+        "Default-Program",
+        "firefox.exe",
+        ""
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 14,
+      "type": "Note",
+      "pos": [
+        2061.088708699547,
+        -8.945712170071246
+      ],
+      "size": [
+        394.2223273383246,
+        88.7777743869357
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Note!",
+      "properties": {},
+      "widgets_values": [
+        "It could be that the custom exe is not available on your computer.\n\nFeel free to try out your own."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        233.89603515625018,
+        -312.6480059814449
+      ],
+      "size": [
+        314.79998779296875,
+        396.3999938964844
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            1,
+            7,
+            8,
+            12,
+            14,
+            20
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "example.png",
+        "image"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 10,
+      "type": "OpenImageNode",
+      "pos": [
+        1592.5757500542575,
+        156.03468254089353
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 8
+        },
+        {
+          "name": "program_input",
+          "shape": 7,
+          "type": "PROGRAM",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "chosen_program",
+          "type": "PROGRAM",
+          "links": [
+            11
+          ]
+        }
+      ],
+      "title": "\"use Selected\" example",
+      "properties": {
+        "Node name for S&R": "OpenImageNode"
+      },
+      "widgets_values": [
+        "use Selected",
+        "Default-Program",
+        "",
+        ""
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 15,
+      "type": "Note",
+      "pos": [
+        2613.1895780436203,
+        -5.973063803778949
+      ],
+      "size": [
+        394.2223273383246,
+        88.7777743869357
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Note!",
+      "properties": {},
+      "widgets_values": [
+        "You can enter your own CLI arguments for the executables.\n\nThis will open Chrome in a new window every time."
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 11,
+      "type": "OpenImageNode",
+      "pos": [
+        2611.4827568901924,
+        149.2345574188231
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 14
+        },
+        {
+          "name": "program_input",
+          "shape": 7,
+          "type": "PROGRAM",
+          "link": 13
+        }
+      ],
+      "outputs": [
+        {
+          "name": "chosen_program",
+          "type": "PROGRAM",
+          "links": [
+            15
+          ]
+        }
+      ],
+      "title": "Placeholder example",
+      "properties": {
+        "Node name for S&R": "OpenImageNode"
+      },
+      "widgets_values": [
+        "use Selected",
+        "Google Chrome",
+        "",
+        "--new-window {file}"
+      ],
+      "color": "#322",
+      "bgcolor": "#533"
+    },
+    {
+      "id": 16,
+      "type": "Note",
+      "pos": [
+        3095.444007503259,
+        -0.3840733564589982
+      ],
+      "size": [
+        394.2223273383246,
+        88.7777743869357
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Note!",
+      "properties": {},
+      "widgets_values": [
+        "At last you can take a look at the data that is passed through.\n\nTip: You can also use this Node (Display JSON) to diplay regular Values like Strings. Works great!"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 17,
+      "type": "DisplayJSONNode",
+      "pos": [
+        3094.843909847009,
+        149.61591138475194
+      ],
+      "size": [
+        780.39990234375,
+        466
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_input",
+          "shape": 7,
+          "type": "*",
+          "link": 15
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "DisplayJSONNode"
+      },
+      "widgets_values": [
+        true,
+        "{\n  \"value\": \"Google Chrome\",\n  \"paths\": [\n    \"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\",\n    \"C:\\\\Program Files (x86)\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\",\n    \"C:\\\\Users\\\\nichlas\\\\AppData\\\\Local\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\"\n  ],\n  \"launch\": {\n    \"method\": \"exe\",\n    \"args\": [\n      \"--new-window\",\n      \"{file}\"\n    ]\n  },\n  \"original_source\": \"use Selected\",\n  \"previous_source\": \"use Selected\"\n}"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 20,
+      "type": "PrimitiveString",
+      "pos": [
+        2760.611567995879,
+        660.9403566429987
+      ],
+      "size": [
+        270,
+        58
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            16
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveString"
+      },
+      "widgets_values": [
+        "This is a string"
+      ]
+    },
+    {
+      "id": 18,
+      "type": "DisplayJSONNode",
+      "pos": [
+        3100.7049802680185,
+        661.3937339216445
+      ],
+      "size": [
+        442.95981445312464,
+        250
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_input",
+          "shape": 7,
+          "type": "*",
+          "link": 16
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "DisplayJSONNode"
+      },
+      "widgets_values": [
+        true,
+        "This is a string"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 22,
+      "type": "PrimitiveInt",
+      "pos": [
+        3600.064853314891,
+        668.2283074893523
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            19
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveInt"
+      },
+      "widgets_values": [
+        22,
+        "fixed"
+      ]
+    },
+    {
+      "id": 23,
+      "type": "DisplayJSONNode",
+      "pos": [
+        3918.3247694932734,
+        668.1816379743789
+      ],
+      "size": [
+        442.95981445312464,
+        250
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_input",
+          "shape": 7,
+          "type": "*",
+          "link": 19
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "DisplayJSONNode"
+      },
+      "widgets_values": [
+        true,
+        "22"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 25,
+      "type": "DisplayJSONNode",
+      "pos": [
+        3107.5715005045595,
+        978.8294011308458
+      ],
+      "size": [
+        442.95981445312464,
+        250
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "json_input",
+          "shape": 7,
+          "type": "*",
+          "link": 20
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "DisplayJSONNode"
+      },
+      "widgets_values": [
+        true,
+        "tensor([[[[0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          ...,\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000]],\n\n         [[0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          ...,\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000]],\n\n         [[0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          ...,\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000],\n          [0.3686, 0.5804, 1.0000]],\n\n         ...,\n\n         [[0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          ...,\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039]],\n\n         [[0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          ...,\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039]],\n\n         [[0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          ...,\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039],\n          [0.3686, 1.0000, 0.4039]]]])"
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 1,
+      "type": "ProgramChooserNode",
+      "pos": [
+        159.80001220703133,
+        166.0000045776367
+      ],
+      "size": [
+        400,
+        200
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "program_input",
+          "shape": 7,
+          "type": "PROGRAM",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "chosen_program",
+          "type": "PROGRAM",
+          "links": [
+            2
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ProgramChooserNode"
+      },
+      "widgets_values": [
+        "use Selected",
+        "Google Chrome",
+        "",
+        ""
+      ],
+      "color": "#332922",
+      "bgcolor": "#593930"
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      1,
+      0,
+      2,
+      1,
+      "PROGRAM"
+    ],
+    [
+      7,
+      3,
+      0,
+      7,
+      0,
+      "IMAGE"
+    ],
+    [
+      8,
+      3,
+      0,
+      10,
+      0,
+      "IMAGE"
+    ],
+    [
+      9,
+      7,
+      0,
+      10,
+      1,
+      "PROGRAM"
+    ],
+    [
+      10,
+      2,
+      0,
+      7,
+      1,
+      "PROGRAM"
+    ],
+    [
+      11,
+      10,
+      0,
+      13,
+      1,
+      "PROGRAM"
+    ],
+    [
+      12,
+      3,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      13,
+      13,
+      0,
+      11,
+      1,
+      "PROGRAM"
+    ],
+    [
+      14,
+      3,
+      0,
+      11,
+      0,
+      "IMAGE"
+    ],
+    [
+      15,
+      11,
+      0,
+      17,
+      0,
+      "PROGRAM"
+    ],
+    [
+      16,
+      20,
+      0,
+      18,
+      0,
+      "STRING"
+    ],
+    [
+      19,
+      22,
+      0,
+      23,
+      0,
+      "INT"
+    ],
+    [
+      20,
+      3,
+      0,
+      25,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6944444444444445,
+      "offset": [
+        258.04213951967364,
+        656.1664879967612
+      ]
+    },
+    "linkExtensions": [
+      {
+        "id": 1,
+        "parentId": 1
+      },
+      {
+        "id": 7,
+        "parentId": 3
+      },
+      {
+        "id": 8,
+        "parentId": 4
+      },
+      {
+        "id": 12,
+        "parentId": 5
+      },
+      {
+        "id": 14,
+        "parentId": 6
+      },
+      {
+        "id": 20,
+        "parentId": 7
+      }
+    ],
+    "reroutes": [
+      {
+        "id": 1,
+        "pos": [
+          618.7946146647131,
+          99.69473541259794
+        ],
+        "linkIds": [
+          1,
+          7,
+          8,
+          12,
+          14,
+          20
+        ]
+      },
+      {
+        "id": 2,
+        "parentId": 1,
+        "pos": [
+          1588.3946818033894,
+          57.294710998535436
+        ],
+        "linkIds": []
+      },
+      {
+        "id": 3,
+        "parentId": 1,
+        "pos": [
+          1113.9756829155851,
+          98.06802808125815
+        ],
+        "linkIds": [
+          7,
+          8,
+          12,
+          14,
+          20
+        ]
+      },
+      {
+        "id": 4,
+        "parentId": 3,
+        "pos": [
+          1559.775823296445,
+          98.70134412129717
+        ],
+        "linkIds": [
+          8,
+          12,
+          14,
+          20
+        ]
+      },
+      {
+        "id": 5,
+        "parentId": 4,
+        "pos": [
+          2019.2052739800374,
+          99.35988873799619
+        ],
+        "linkIds": [
+          12,
+          14,
+          20
+        ]
+      },
+      {
+        "id": 6,
+        "parentId": 5,
+        "pos": [
+          2491.6249831814357,
+          97.88913695441352
+        ],
+        "linkIds": [
+          14,
+          20
+        ]
+      },
+      {
+        "id": 7,
+        "parentId": 6,
+        "pos": [
+          2492.1154829264337,
+          995.0149533769379
+        ],
+        "linkIds": [
+          20
+        ]
+      }
+    ],
+    "frontendVersion": "1.41.7"
+  },
+  "version": 0.4
+}
