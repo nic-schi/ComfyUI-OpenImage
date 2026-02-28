@@ -8,7 +8,7 @@ from enum import Enum
 
 
 class LoggerSettings(Enum):
-    LOG_LEVEL = logging.DEBUG
+    LOG_LEVEL = logging.INFO
     LOG_NAME = "OpenImage"
 
 
