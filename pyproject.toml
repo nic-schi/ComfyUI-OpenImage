@@ -1,5 +1,5 @@
 [project]
-name = "comfyui-openimage"
+name = "openimage"
 description = "Lets you open a generated Image in a Specific Program."
 version = "2.0.0"
 license = { file = "LICENSE" }
